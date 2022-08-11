@@ -1,0 +1,245 @@
+{
+  "leftFilePath" : "/Users/felixrinker/work/tuwqse/repositories/modeliee/mvmf/mvmf-pipeline-itests/mvmf-pipeline-itest-tmvmt/src/test/resources/tmvmt/uc-screw_dashboard-full/integrate/convert/output/electrical-view_converted.aml",
+  "rightFilePath" : "/Users/felixrinker/work/tuwqse/repositories/modeliee/mvmf/mvmf-pipeline-itests/mvmf-pipeline-itest-tmvmt/src/test/resources/tmvmt/uc-screw_dashboard-full/integrate/evaluate/output/SUM_Evaluated_mechanical-view.aml",
+  "modelChanges" : [ {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "ElectricalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "2ca4850d-1a5c-48c2-a11c-02bbbbdc6382",
+        "name" : "ElectricalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "ElectricalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "2ca4850d-1a5c-48c2-a11c-02bbbbdc6382",
+        "name" : "ElectricalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "null",
+    "newValue" : "ElectricScrewdriver"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "power_consumption",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "2ca4850d-1a5c-48c2-a11c-02bbbbdc6382",
+        "name" : "ElectricalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "power_consumption",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "2ca4850d-1a5c-48c2-a11c-02bbbbdc6382",
+        "name" : "ElectricalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "0.0",
+    "newValue" : "10"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "ElectricalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "e577e46d-6bf4-4cd7-b4a0-6dfea93478e4",
+        "name" : "ElectricalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "ElectricalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "e577e46d-6bf4-4cd7-b4a0-6dfea93478e4",
+        "name" : "ElectricalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "null",
+    "newValue" : "HighPowerSupply"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "power_supply",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "e577e46d-6bf4-4cd7-b4a0-6dfea93478e4",
+        "name" : "ElectricalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "power_supply",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "e577e46d-6bf4-4cd7-b4a0-6dfea93478e4",
+        "name" : "ElectricalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "0.0",
+    "newValue" : "100"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "ElectricalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "d5444d36-1b61-44d4-a29c-bf5027ce5f11",
+        "name" : "ElectricalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "ElectricalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "d5444d36-1b61-44d4-a29c-bf5027ce5f11",
+        "name" : "ElectricalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "null",
+    "newValue" : "LowPowerSupply"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "power_supply",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "d5444d36-1b61-44d4-a29c-bf5027ce5f11",
+        "name" : "ElectricalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "power_supply",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "d5444d36-1b61-44d4-a29c-bf5027ce5f11",
+        "name" : "ElectricalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "0.0",
+    "newValue" : "50"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "ElectricalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "d3eeb4d0-6638-4c19-a56e-01c6b0798ba8",
+        "name" : "ElectricalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "ElectricalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "d3eeb4d0-6638-4c19-a56e-01c6b0798ba8",
+        "name" : "ElectricalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "null",
+    "newValue" : "FieldbusNetwork"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "fieldbus_type",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "d3eeb4d0-6638-4c19-a56e-01c6b0798ba8",
+        "name" : "ElectricalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "fieldbus_type",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "d3eeb4d0-6638-4c19-a56e-01c6b0798ba8",
+        "name" : "ElectricalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "",
+    "newValue" : "ModBus"
+  } ]
+}

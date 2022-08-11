@@ -1,0 +1,28 @@
+# Mechanical import configuration file
+
+uriScheme: xml
+
+objectMapping:
+  - expression: device
+    systemUnitClassPath: AML2ElectricalViewSystemUnitClassLib/ElectricScrewdriver
+    listType: ElectricExport
+    condition:
+      - ./@name="ElectricScrewdriver"
+
+  - expression: device
+    systemUnitClassPath: AML2ElectricalViewSystemUnitClassLib/HighPowerSupply
+    listType: ElectricExport
+    condition:
+      - ./@name="HighPowerSupply"
+
+  - expression: device
+    systemUnitClassPath: AML2ElectricalViewSystemUnitClassLib/LowPowerSupply
+    listType: ElectricExport
+    condition:
+      - ./@name="LowPowerSupply"
+
+  - expression: device
+    systemUnitClassPath: AML2ElectricalViewSystemUnitClassLib/FieldbusNetwork
+    listType: ElectricExport
+    condition:
+      - ./@name="FieldbusNetwork"

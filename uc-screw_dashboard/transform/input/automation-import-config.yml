@@ -1,0 +1,16 @@
+# Automation import configuration file
+
+uriScheme: xml
+
+objectMapping:
+  - expression: device
+    systemUnitClassPath: AML2AutomationViewSystemUnitClassLib/ScrewdriverController
+    listType: AutomationExport
+    condition:
+      - ./@name="ScrewdriverController"
+
+  - expression: device
+    systemUnitClassPath: AML2AutomationViewSystemUnitClassLib/RobotController
+    listType: AutomationExport
+    condition:
+      - ./@name="RobotController"

@@ -1,0 +1,206 @@
+{
+  "leftFilePath" : "/Users/felixrinker/work/tuwqse/repositories/modeliee/mvmf/mvmf-pipeline-itests/mvmf-pipeline-itest-tmvmt/src/test/resources/tmvmt/uc-screw_dashboard-full/integrate/convert/output/mechanical-view_converted.aml",
+  "rightFilePath" : "/Users/felixrinker/work/tuwqse/repositories/modeliee/mvmf/mvmf-pipeline-itests/mvmf-pipeline-itest-tmvmt/src/test/resources/tmvmt/uc-screw_dashboard-full/generate/project/output/Demo-Project_SUM_template.aml",
+  "modelChanges" : [ {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "MechanicalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "b1e753a6-9756-4edb-8a36-e39983af8850",
+        "name" : "MechanicalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "MechanicalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "b1e753a6-9756-4edb-8a36-e39983af8850",
+        "name" : "MechanicalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "null",
+    "newValue" : "10210000"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "torque",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "b1e753a6-9756-4edb-8a36-e39983af8850",
+        "name" : "MechanicalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "torque",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "b1e753a6-9756-4edb-8a36-e39983af8850",
+        "name" : "MechanicalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "0.0",
+    "newValue" : "5"
+  }, {
+    "type" : "ElementChange",
+    "changeKind" : "ADD",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Element",
+      "id" : "b1e753a6-9756-4edb-8a36-e39983af8850",
+      "name" : "MechanicalView"
+    },
+    "rightParent" : {
+      "type" : "Element",
+      "id" : "b1e753a6-9756-4edb-8a36-e39983af8850",
+      "name" : "MechanicalView"
+    },
+    "value" : {
+      "type" : "Link",
+      "id" : "c9e0172d-e3ca-486d-b24d-3f45bde82117",
+      "name" : "ElectricScrewdriver.MechanicalView:MechanicalView_toChild-Bit.MechanicalView:MechanicalView_toMother",
+      "refPartnerSideA" : "b1e753a6-9756-4edb-8a36-e39983af8850:MechanicalView_toChild",
+      "refPartnerSideB" : "5cdb1769-2207-4924-b665-0a98fd67ab61:MechanicalView_toMother"
+    }
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "MechanicalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "5cdb1769-2207-4924-b665-0a98fd67ab61",
+        "name" : "MechanicalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "MechanicalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "5cdb1769-2207-4924-b665-0a98fd67ab61",
+        "name" : "MechanicalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "null",
+    "newValue" : "10211000"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "bit_type",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "5cdb1769-2207-4924-b665-0a98fd67ab61",
+        "name" : "MechanicalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "bit_type",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "5cdb1769-2207-4924-b665-0a98fd67ab61",
+        "name" : "MechanicalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "",
+    "newValue" : "TORX"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "MechanicalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "98f5f099-0b26-46a3-ac8a-6f788e39b185",
+        "name" : "MechanicalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "MechanicalViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "98f5f099-0b26-46a3-ac8a-6f788e39b185",
+        "name" : "MechanicalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "null",
+    "newValue" : "10220000"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "position_accuracy",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "98f5f099-0b26-46a3-ac8a-6f788e39b185",
+        "name" : "MechanicalView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "position_accuracy",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "98f5f099-0b26-46a3-ac8a-6f788e39b185",
+        "name" : "MechanicalView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "0.0",
+    "newValue" : "80"
+  } ]
+}

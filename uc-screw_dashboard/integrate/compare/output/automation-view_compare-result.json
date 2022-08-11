@@ -1,0 +1,125 @@
+{
+  "leftFilePath" : "/Users/felixrinker/work/tuwqse/repositories/modeliee/mvmf/mvmf-pipeline-itests/mvmf-pipeline-itest-tmvmt/src/test/resources/tmvmt/uc-screw_dashboard-full/integrate/convert/output/automation-view_converted.aml",
+  "rightFilePath" : "/Users/felixrinker/work/tuwqse/repositories/modeliee/mvmf/mvmf-pipeline-itests/mvmf-pipeline-itest-tmvmt/src/test/resources/tmvmt/uc-screw_dashboard-full/integrate/evaluate/output/SUM_Evaluated_electrical-view.aml",
+  "modelChanges" : [ {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "AutomationViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "b4fe6cd4-85a1-45c0-aa7f-c71652dfb7bb",
+        "name" : "AutomationView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "AutomationViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "b4fe6cd4-85a1-45c0-aa7f-c71652dfb7bb",
+        "name" : "AutomationView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "null",
+    "newValue" : "ScrewdriverController"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "screwdriver_curve",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "b4fe6cd4-85a1-45c0-aa7f-c71652dfb7bb",
+        "name" : "AutomationView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "screwdriver_curve",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "b4fe6cd4-85a1-45c0-aa7f-c71652dfb7bb",
+        "name" : "AutomationView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "",
+    "newValue" : "DefaultScrewingCurve"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "AutomationViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "e756ae90-5e01-480b-af8d-e044723d7cba",
+        "name" : "AutomationView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "AutomationViewID",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "e756ae90-5e01-480b-af8d-e044723d7cba",
+        "name" : "AutomationView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "null",
+    "newValue" : "RobotController"
+  }, {
+    "type" : "AttributeModify",
+    "changeKind" : "CHANGE",
+    "accepted" : false,
+    "leftParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "motion_acceleration",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "e756ae90-5e01-480b-af8d-e044723d7cba",
+        "name" : "AutomationView"
+      }
+    },
+    "rightParent" : {
+      "type" : "Attribute",
+      "id" : null,
+      "name" : "motion_acceleration",
+      "parentElement" : {
+        "type" : "Element",
+        "id" : "e756ae90-5e01-480b-af8d-e044723d7cba",
+        "name" : "AutomationView"
+      }
+    },
+    "property" : {
+      "type" : "Property",
+      "name" : "value"
+    },
+    "oldValue" : "0.0",
+    "newValue" : "50"
+  } ]
+}

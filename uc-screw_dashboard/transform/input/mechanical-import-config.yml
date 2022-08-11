@@ -1,0 +1,23 @@
+# Mechanical import configuration file
+
+uriScheme: xml
+
+objectMapping:
+
+  - expression: Assembly
+    systemUnitClassPath: AML2MechanicalViewSystemUnitClassLib/ElectricScrewdriver
+    listType: MechExport
+    condition:
+      - "./@DescrEN='ElectricScrewdriver'"
+
+  - expression: Assembly
+    systemUnitClassPath: AML2MechanicalViewSystemUnitClassLib/Bit
+    listType: MechExport
+    condition:
+      - ./@DescrEN="Bit"
+
+  - expression: Assembly
+    systemUnitClassPath: AML2MechanicalViewSystemUnitClassLib/Robot
+    listType: MechExport
+    condition:
+      - ./@DescrEN="Robot"

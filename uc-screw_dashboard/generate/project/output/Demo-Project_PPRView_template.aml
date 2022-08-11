@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CAEXFile FileName="Demo-Project_PPRView_template.aml" SchemaVersion="2.15">
+    <AdditionalInformation xmlns:ns2="at.ac.tuwien.ifs.qse.model.caex215.model.CAEXFile" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AutomationMLVersion="2.0"/>
+    <InterfaceClassLib Name="AutomationMLBPRInterfaceClassLib">
+        <Version>0</Version>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector" Name="ExternalDataReference"/>
+    </InterfaceClassLib>
+    <InterfaceClassLib Name="CommunicationInterfaceClassLib">
+        <Description>AutomationML Communication Interface Class Library</Description>
+        <Version>1.0.0</Version>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication" Name="PhysicalEndPoint"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication" Name="LogicalEndPoint"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication" Name="DatagrammObject"/>
+    </InterfaceClassLib>
+    <InterfaceClassLib Name="AutomationProjectConfigurationInterfaceClassLib">
+        <Description>Automation Markup Language Automation Project Configuration InterfaceClass Library</Description>
+        <Version>1.1.0</Version>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/VariableInterface" Name="Tag">
+            <Attribute AttributeDataType="xs:string" Name="DataType">
+                <Attribute AttributeDataType="xs:boolean" Name="Customized">
+                    <DefaultValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">[DefaultValue: null]</DefaultValue>
+                </Attribute>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="IoType"/>
+            <Attribute AttributeDataType="xs:string" Name="LogicalAddress"/>
+            <Attribute AttributeDataType="xs:string" Name="Comment"/>
+        </InterfaceClass>
+        <InterfaceClass RefBaseClassPath="CommunicationInterfaceClassLib/PhysicalEndPoint" Name="CommunicationPortInterface"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface" Name="Channel">
+            <Attribute AttributeDataType="xs:string" Name="Type"/>
+            <Attribute AttributeDataType="xs:string" Name="IoType"/>
+            <Attribute AttributeDataType="xs:int" Name="Number"/>
+            <Attribute AttributeDataType="xs:int" Name="Length"/>
+        </InterfaceClass>
+        <InterfaceClass RefBaseClassPath="CommunicationInterfaceClassLib/LogicalEndPoint" Name="ModuleAssignment"/>
+    </InterfaceClassLib>
+    <InterfaceClassLib Name="AutomationMLInterfaceClassLib">
+        <Description>Standard Automation Markup Language Interface Class Library - Part 1 Content extended with Part 3 and Part 4 Content</Description>
+        <Version>2.2.2</Version>
+        <InterfaceClass Name="AutomationMLBaseInterface">
+            <InterfaceClass RefBaseClassPath="AutomationMLBaseInterface" Name="Order">
+                <Attribute AttributeDataType="xs:string" Name="Direction"/>
+            </InterfaceClass>
+            <InterfaceClass RefBaseClassPath="AutomationMLBaseInterface" Name="PortConnector"/>
+            <InterfaceClass RefBaseClassPath="AutomationMLBaseInterface" Name="InterlockingConnector"/>
+            <InterfaceClass RefBaseClassPath="AutomationMLBaseInterface" Name="PPRConnector"/>
+            <InterfaceClass RefBaseClassPath="AutomationMLBaseInterface" Name="ExternalDataConnector">
+                <Attribute AttributeDataType="xs:anyURI" Name="refURI"/>
+                <InterfaceClass RefBaseClassPath="ExternalDataConnector" Name="COLLADAInterface">
+                    <Attribute AttributeDataType="xs:string" Name="refType"/>
+                    <Attribute AttributeDataType="xs:token" Name="target"/>
+                </InterfaceClass>
+                <InterfaceClass RefBaseClassPath="ExternalDataConnector" Name="PLCopenXMLInterface">
+                    <InterfaceClass RefBaseClassPath="PLCopenXMLInterface" Name="LogicInterface">
+                        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" Name="SequencingLogicInterface"/>
+                        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" Name="BehaviourLogicInterface"/>
+                        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" Name="SequencingBehaviourLogicInterface"/>
+                        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" Name="InterlockingLogicInterface"/>
+                    </InterfaceClass>
+                    <InterfaceClass RefBaseClassPath="PLCopenXMLInterface" Name="LogicElementInterface"/>
+                    <InterfaceClass RefBaseClassPath="PLCopenXMLInterface" Name="VariableInterface">
+                        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/VariableInterface" Name="InterlockingVariableInterface">
+                            <Attribute AttributeDataType="xs:boolean" Name="SafeConditionEquals">
+<DefaultValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">[DefaultValue: null]</DefaultValue>
+                            </Attribute>
+                        </InterfaceClass>
+                    </InterfaceClass>
+                </InterfaceClass>
+            </InterfaceClass>
+            <InterfaceClass RefBaseClassPath="AutomationMLBaseInterface" Name="Communication">
+                <InterfaceClass RefBaseClassPath="Communication" Name="SignalInterface"/>
+            </InterfaceClass>
+            <InterfaceClass RefBaseClassPath="AutomationMLBaseInterface" Name="AttachmentInterface"/>
+        </InterfaceClass>
+    </InterfaceClassLib>
+    <InterfaceClassLib Name="HierarchyViewInterfaceClassLib">
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="23db39c9-35f1-4f27-a8aa-0eb42d330b39" Name="AutomationView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="c6e9d832-c7d2-4cfb-b915-cf5702c1b08c" Name="QualityView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="a8b7cc60-9ab7-48f5-836d-7e77ce9399f8" Name="MechanicalView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="9160545b-8abc-49e6-b017-9903a64132a5" Name="ElectricalView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="041d39ce-6203-421f-80e3-4390d16aad13" Name="PPRView"/>
+    </InterfaceClassLib>
+    <InterfaceClassLib Name="PPRViewInterfaceClassLib"/>
+    <RoleClassLib Name="AutomationMLBaseRoleClassLib">
+        <Description>Automation Markup Language Base Role class Library - Part 1 Content extended with Part 3 Content
+        </Description>
+        <Version>2.2.1</Version>
+        <RoleClass Name="AutomationMLBaseRole">
+            <RoleClass RefBaseClassPath="AutomationMLBaseRole" Name="Group">
+                <Attribute AttributeDataType="xs:string" Name="AssociatedFacet"/>
+            </RoleClass>
+            <RoleClass RefBaseClassPath="AutomationMLBaseRole" Name="Facet"/>
+            <RoleClass RefBaseClassPath="AutomationMLBaseRole" Name="Port">
+                <Attribute AttributeDataType="xs:string" Name="Direction"/>
+                <Attribute Name="Cardinality">
+                    <Attribute AttributeDataType="xs:unsignedInt" Name="MinOccur"/>
+                    <Attribute AttributeDataType="xs:unsignedInt" Name="MaxOccur"/>
+                </Attribute>
+                <Attribute AttributeDataType="xs:string" Name="Category"/>
+                <ExternalInterface RefBaseClassPath="AutomationMLInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" ID="9942bd9c-c19d-44e4-a197-11b9edf264e7" Name="ConnectionPoint"/>
+            </RoleClass>
+            <RoleClass RefBaseClassPath="AutomationMLBaseRole" Name="Resource"/>
+            <RoleClass RefBaseClassPath="AutomationMLBaseRole" Name="Product"/>
+            <RoleClass RefBaseClassPath="AutomationMLBaseRole" Name="Process"/>
+            <RoleClass RefBaseClassPath="AutomationMLBaseRole" Name="Structure">
+                <RoleClass RefBaseClassPath="Structure" Name="ProductStructure"/>
+                <RoleClass RefBaseClassPath="Structure" Name="ProcessStructure"/>
+                <RoleClass RefBaseClassPath="Structure" Name="ResourceStructure"/>
+            </RoleClass>
+            <RoleClass RefBaseClassPath="AutomationMLBaseRole" Name="PropertySet"/>
+            <RoleClass RefBaseClassPath="AutomationMLBaseRole" Name="Frame"/>
+        </RoleClass>
+    </RoleClassLib>
+    <RoleClassLib Name="AutomationMLDMIRoleClassLib">
+        <Description>Automation Markup Language Discrete Manufacturing Industry Role Class Library</Description>
+        <Version>2.4.0</Version>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" Name="DiscManufacturingEquipment">
+            <RoleClass RefBaseClassPath="DiscManufacturingEquipment" Name="Transport"/>
+            <RoleClass RefBaseClassPath="DiscManufacturingEquipment" Name="Storage"/>
+            <RoleClass RefBaseClassPath="DiscManufacturingEquipment" Name="Fixture"/>
+            <RoleClass RefBaseClassPath="DiscManufacturingEquipment" Name="Gate"/>
+            <RoleClass RefBaseClassPath="DiscManufacturingEquipment" Name="Robot"/>
+            <RoleClass RefBaseClassPath="DiscManufacturingEquipment" Name="Tool"/>
+            <RoleClass RefBaseClassPath="DiscManufacturingEquipment" Name="Carrier"/>
+            <RoleClass RefBaseClassPath="DiscManufacturingEquipment" Name="Machine"/>
+            <RoleClass RefBaseClassPath="DiscManufacturingEquipment" Name="StaticObject"/>
+        </RoleClass>
+    </RoleClassLib>
+    <RoleClassLib Name="AutomationMLBMIRoleClassLib">
+        <Description>Automation Markup Language Batch Manufacturing Industry Role Class Library</Description>
+        <Version>1.1.0</Version>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" Name="BatchManufacturingEquipment"/>
+    </RoleClassLib>
+    <RoleClassLib Name="AutomationMLCMIRoleClassLib">
+        <Description>Automation Markup Language Continuous Manufacturing Industry Role Class Library</Description>
+        <Version>1.1.0</Version>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" Name="ContManufacturingEquipment"/>
+    </RoleClassLib>
+    <RoleClassLib Name="AutomationMLCSRoleClassLib">
+        <Description>Automation Markup Language Control Industry Role Class Library</Description>
+        <Version>2.3.0</Version>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" Name="ControlEquipment">
+            <RoleClass RefBaseClassPath="ControlEquipment" Name="Communication"/>
+            <RoleClass RefBaseClassPath="ControlEquipment" Name="ControlHardware">
+                <RoleClass RefBaseClassPath="ControlHardware" Name="PC"/>
+                <RoleClass RefBaseClassPath="ControlHardware" Name="IPC"/>
+                <RoleClass RefBaseClassPath="ControlHardware" Name="EmbeddedDevice"/>
+                <RoleClass RefBaseClassPath="ControlHardware" Name="Handheld"/>
+            </RoleClass>
+            <RoleClass RefBaseClassPath="ControlEquipment" Name="Sensor"/>
+            <RoleClass RefBaseClassPath="ControlEquipment" Name="Actuator"/>
+            <RoleClass RefBaseClassPath="ControlEquipment" Name="Controller">
+                <RoleClass RefBaseClassPath="Controller" Name="PLC"/>
+                <RoleClass RefBaseClassPath="Controller" Name="NC"/>
+                <RoleClass RefBaseClassPath="Controller" Name="RC"/>
+                <RoleClass RefBaseClassPath="Controller" Name="PAC"/>
+            </RoleClass>
+        </RoleClass>
+    </RoleClassLib>
+    <RoleClassLib Name="AutomationMLExtendedRoleClassLib">
+        <Version>2.7.0</Version>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Facet" Name="PLCFacet"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Facet" Name="HMIFacet"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" Name="Enterprise"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" Name="Site"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" Name="Area"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" Name="ProductionLine"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" Name="WorkCell"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" Name="ProcessCell"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" Name="Unit"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" Name="ProductionUnit"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" Name="StorageZone"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" Name="StorageUnit"/>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" Name="Turntable"/>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" Name="Conveyor">
+            <RoleClass RefBaseClassPath="Conveyor" Name="BeltConveyor"/>
+            <RoleClass RefBaseClassPath="Conveyor" Name="RollConveyor"/>
+            <RoleClass RefBaseClassPath="Conveyor" Name="ChainConveyor"/>
+            <RoleClass RefBaseClassPath="Conveyor" Name="PalletConveyor"/>
+            <RoleClass RefBaseClassPath="Conveyor" Name="OverheadConveyor"/>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" Name="LiftingTable"/>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" Name="AGV"/>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" Name="Transposer"/>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" Name="CarrierHandlingSystem"/>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Storage" Name="BodyStore"/>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" Name="Lift"/>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" Name="Rollerbed"/>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Tool" Name="StationaryTool"/>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Tool" Name="MovableTool"/>
+        <RoleClass RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment" Name="ControlCabinet"/>
+        <RoleClass RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment" Name="IODevice"/>
+        <RoleClass RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment" Name="HMI">
+            <RoleClass RefBaseClassPath="AutomationMLExtendedRoleClassLib/HMI" Name="WarningEquipment"/>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment/Actuator" Name="ActuatingDrive"/>
+        <RoleClass RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment" Name="MotionController"/>
+        <RoleClass RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment/ControlHardware" Name="Panel"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" Name="MeasuringEquipment"/>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Fixture" Name="Clamp"/>
+        <RoleClass RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment/Controller" Name="ProcessController"/>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Storage" Name="Loader"/>
+        <RoleClass RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Storage" Name="Unloader"/>
+    </RoleClassLib>
+    <RoleClassLib Name="AutomationMLReferenceDesignationRoleClassLib">
+        <Version>1.0.0</Version>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" Name="ContainsReferenceDesignation">
+            <Attribute AttributeDataType="xs:string" Name="functionOrientedReferenceDesignation">
+                <Description>Function oriented reference designation following IEC 81346.</Description>
+                <RefSemantic CorrespondingAttributePath="IEC81346"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="productOrientedReferenceDesignation">
+                <Description>Product oriented reference designation following IEC 81346.</Description>
+                <RefSemantic CorrespondingAttributePath="IEC81346"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="locationOrientedReferenceDesignation">
+                <Description>Location oriented reference designation following IEC 81346.</Description>
+                <RefSemantic CorrespondingAttributePath="IEC81346"/>
+            </Attribute>
+        </RoleClass>
+    </RoleClassLib>
+    <RoleClassLib Name="CommunicationRoleClassLib">
+        <Description>AutomationML Communication Role Class Library</Description>
+        <Version>1.0.1</Version>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" Name="PhysicalDevice">
+            <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" Name="PhysicalEndpointlist"/>
+            <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" Name="VariableList"/>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" Name="PhysicalConnection"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" Name="PhysicalNetwork"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" Name="LogicalDevice">
+            <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" Name="LogicalEndpointlist"/>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" Name="LogicalConnection"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" Name="LogicalNetwork"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" Name="CommunicationPackage"/>
+    </RoleClassLib>
+    <RoleClassLib Name="AutomationProjectConfigurationRoleClassLib">
+        <Description>Automation Markup Language Automation Project Configuration Data Class Library</Description>
+        <Version>1.1.0</Version>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" Name="AutomationProject">
+            <Attribute AttributeDataType="xs:string" Name="ProjectManufacturer"/>
+            <Attribute AttributeDataType="xs:string" Name="ProjectSign"/>
+            <Attribute AttributeDataType="xs:string" Name="ProjectRevision"/>
+            <Attribute AttributeDataType="xs:string" Name="ProjectInformation"/>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" Name="DeviceUserFolder"/>
+        <RoleClass RefBaseClassPath="CommunicationRoleClassLib/LogicalNetwork" Name="Subnet">
+            <Attribute AttributeDataType="xs:string" Name="Type"/>
+            <ExternalInterface RefBaseClassPath="CommunicationInterfaceClassLib/LogicalEndPoint" ID="3e661cba-acfc-43b8-a02b-14ad7061f137" Name="LogicalEndPoint"/>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="CommunicationRoleClassLib/PhysicalDevice" Name="Device">
+            <Attribute AttributeDataType="xs:string" Name="TypeIdentifier"/>
+            <Attribute AttributeDataType="xs:string" Name="Comment"/>
+            <Attribute AttributeDataType="xs:string" Name="Manufacturer"/>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="CommunicationRoleClassLib/PhysicalDevice" Name="DeviceItem">
+            <Attribute AttributeDataType="xs:string" Name="TypeName"/>
+            <Attribute AttributeDataType="xs:string" Name="DeviceItemType">
+                <Attribute AttributeDataType="xs:boolean" Name="Customized">
+                    <DefaultValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">[DefaultValue: null]</DefaultValue>
+                </Attribute>
+            </Attribute>
+            <Attribute AttributeDataType="xs:int" Name="PositionNumber"/>
+            <Attribute AttributeDataType="xs:boolean" Name="BuiltIn">
+                <DefaultValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">[DefaultValue: null]</DefaultValue>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="TypeIdentifier"/>
+            <Attribute AttributeDataType="xs:string" Name="Manufacturer"/>
+            <Attribute AttributeDataType="xs:string" Name="FirmwareVersion"/>
+            <Attribute AttributeDataType="xs:string" Name="PlantDesignation IEC">
+                <Description>Function oriented reference designation following IEC 81346</Description>
+                <RefSemantic CorrespondingAttributePath="IEC 81346-1:2009-07#5.3 - Function-oriented structure"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="LocationIdentifier IEC">
+                <Description>Location oriented reference designation following IEC 81346</Description>
+                <RefSemantic CorrespondingAttributePath="IEC 81346-1:2009-07#5.5 - Location-oriented structure"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="ProductDesignation IEC">
+                <Description>Product oriented reference designation following IEC 81346</Description>
+                <RefSemantic CorrespondingAttributePath="IEC 81346-1:2009-07#5.4 - Product-oriented structure"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:dateTime" Name="InstallationDate"/>
+            <Attribute AttributeDataType="xs:string" Name="Comment"/>
+            <Attribute Name="Address">
+                <RefSemantic CorrespondingAttributePath="OrderedListType"/>
+                <Attribute Name="1">
+                    <Attribute AttributeDataType="xs:int" Name="StartAddress"/>
+                    <Attribute AttributeDataType="xs:int" Name="Length"/>
+                    <Attribute AttributeDataType="xs:string" Name="IoType"/>
+                    <Attribute AttributeDataType="xs:int" Name="BitOffset"/>
+                </Attribute>
+                <Attribute Name="2">
+                    <Attribute AttributeDataType="xs:int" Name="StartAddress"/>
+                    <Attribute AttributeDataType="xs:int" Name="Length"/>
+                    <Attribute AttributeDataType="xs:string" Name="IoType"/>
+                    <Attribute AttributeDataType="xs:int" Name="BitOffset"/>
+                </Attribute>
+                <Attribute Name="3">
+                    <Attribute AttributeDataType="xs:int" Name="StartAddress"/>
+                    <Attribute AttributeDataType="xs:int" Name="Length"/>
+                    <Attribute AttributeDataType="xs:string" Name="IoType"/>
+                    <Attribute AttributeDataType="xs:int" Name="BitOffset"/>
+                </Attribute>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="AutomationProjectConfigurationInterfaceClassLib/ModuleAssignment" ID="110c6f0b-75b7-4c3c-9d05-1b28eeeec5df" Name="ModuleAssignment"/>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="CommunicationRoleClassLib/PhysicalDevice/VariableList" Name="TagTable">
+            <Attribute AttributeDataType="xs:boolean" Name="AssignToDefault"/>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="CommunicationRoleClassLib/PhysicalDevice/VariableList" Name="TagUserFolder"/>
+        <RoleClass RefBaseClassPath="CommunicationRoleClassLib/LogicalDevice" Name="Node">
+            <Attribute AttributeDataType="xs:string" Name="Type"/>
+            <Attribute AttributeDataType="xs:string" Name="NetworkAddress"/>
+            <ExternalInterface RefBaseClassPath="CommunicationInterfaceClassLib/LogicalEndPoint" ID="9562e3ae-8c2b-4055-a327-3ab66f949d5e" Name="LogicalEndPoint"/>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="AutomationProjectConfigurationRoleClassLib/DeviceItem" Name="CommunicationInterface">
+            <Attribute AttributeDataType="xs:string" Name="Label"/>
+            <Attribute AttributeDataType="xs:string" Name="Type"/>
+            <ExternalInterface RefBaseClassPath="CommunicationInterfaceClassLib/LogicalEndPoint" ID="dedad3eb-1a51-4d7e-accb-fdc8213c6c23" Name="LogicalEndPoint"/>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="CommunicationRoleClassLib/LogicalDevice" Name="IoSystem">
+            <Attribute AttributeDataType="xs:int" Name="Number"/>
+            <ExternalInterface RefBaseClassPath="CommunicationInterfaceClassLib/LogicalEndPoint" ID="003f6b58-c95a-4346-8a0c-aaad895a6492" Name="LogicalEndPoint"/>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="AutomationProjectConfigurationRoleClassLib/DeviceItem" Name="CommunicationPort">
+            <Attribute AttributeDataType="xs:string" Name="Label"/>
+            <ExternalInterface RefBaseClassPath="AutomationProjectConfigurationInterfaceClassLib/CommunicationPortInterface" ID="b0f1bb7c-1df9-494e-8352-0cae067e357d" Name="CommunicationPortInterface"/>
+        </RoleClass>
+    </RoleClassLib>
+    <RoleClassLib Name="HierarchyViewRoleClassLib">
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/PropertySet" ID="d7d9ed2b-3bd3-489e-a6d6-5e0a21fe823e" Name="PPRView">
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+        </RoleClass>
+    </RoleClassLib>
+    <RoleClassLib Name="PPRViewRoleClassLib">
+        <RoleClass Name="Transformer">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="RobotController">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="ScrewdriverController">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="HighPowerSupply">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="Drive">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="ElectricScrewdriver">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="Bit">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="Robot">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="FieldbusNetwork">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="LowPowerSupply">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="Car_body_with_screwed_on_dashboard">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="Car_body_with_dashboard">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="FastenScrewMeasure">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+        </RoleClass>
+    </RoleClassLib>
+    <SystemUnitClassLib ID="2853a69b-b48c-4c62-ac2e-55080a23de05" Name="AML2PPRViewSystemUnitClassLib">
+        <SystemUnitClass ID="8122c5bf-89d5-4447-bc2d-ba6ed381477e" Name="Transformer">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+            <SupportedRoleClass RefRoleClassPath="PPRViewRoleClassLib/Transformer"/>
+            <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/PPRView"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="b174be1f-f0be-4f8d-bd78-334589e1aea3" Name="RobotController">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+            <SupportedRoleClass RefRoleClassPath="PPRViewRoleClassLib/RobotController"/>
+            <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/PPRView"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="5f0ebaed-ef6b-415c-92fb-4806ce3987e9" Name="ScrewdriverController">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+            <SupportedRoleClass RefRoleClassPath="PPRViewRoleClassLib/ScrewdriverController"/>
+            <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/PPRView"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="d5a0dc5e-200d-4c66-bf6c-279187041cd6" Name="HighPowerSupply">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+            <SupportedRoleClass RefRoleClassPath="PPRViewRoleClassLib/HighPowerSupply"/>
+            <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/PPRView"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="d51907aa-2058-42c4-af8c-695d305e49dc" Name="Drive">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+            <SupportedRoleClass RefRoleClassPath="PPRViewRoleClassLib/Drive"/>
+            <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/PPRView"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="e0cfde32-dad9-45eb-a135-9199ba997fc3" Name="ElectricScrewdriver">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+            <SupportedRoleClass RefRoleClassPath="PPRViewRoleClassLib/ElectricScrewdriver"/>
+            <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/PPRView"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="d9819a7e-a97f-4491-8a1e-9a53d9449d8b" Name="Bit">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+            <SupportedRoleClass RefRoleClassPath="PPRViewRoleClassLib/Bit"/>
+            <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/PPRView"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="0f9993f5-a925-4bc0-b81d-39345c934983" Name="Robot">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+            <SupportedRoleClass RefRoleClassPath="PPRViewRoleClassLib/Robot"/>
+            <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/PPRView"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="2e34e12a-eff4-4c4b-acfb-d788cda4158b" Name="FieldbusNetwork">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+            <SupportedRoleClass RefRoleClassPath="PPRViewRoleClassLib/FieldbusNetwork"/>
+            <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/PPRView"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="41e11e6b-deab-4125-8508-cb607980423c" Name="LowPowerSupply">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+            <SupportedRoleClass RefRoleClassPath="PPRViewRoleClassLib/LowPowerSupply"/>
+            <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/PPRView"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="365839f4-df6a-48ac-9b6b-d8f9605e85af" Name="Car_body_with_screwed_on_dashboard">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+            <SupportedRoleClass RefRoleClassPath="PPRViewRoleClassLib/Car_body_with_screwed_on_dashboard"/>
+            <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/PPRView"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="f44dd076-d32d-4a7c-aab0-07f9dfe675fd" Name="Car_body_with_dashboard">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+            <SupportedRoleClass RefRoleClassPath="PPRViewRoleClassLib/Car_body_with_dashboard"/>
+            <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/PPRView"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="aec711a1-5636-4ce6-9d4b-6050056e6d9d" Name="FastenScrewMeasure">
+            <Attribute AttributeDataType="String" Name="PPRViewID">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="2290903e-84e2-4c11-bf83-8ed6f253b6fe" Name="PPRView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/PPRView" ID="5f49a3a5-c677-43dc-8497-de2cfea21295" Name="PPRView_toChild"/>
+            <SupportedRoleClass RefRoleClassPath="PPRViewRoleClassLib/FastenScrewMeasure"/>
+            <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/PPRView"/>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+</CAEXFile>

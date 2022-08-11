@@ -1,0 +1,146 @@
+{
+  "projectName": null,
+  "projectVersion": null,
+  "mappings": [
+    [
+      {
+        "name": "FunctionViewID",
+        "value": "PS"
+      },
+      {
+        "name": "MechanicViewID",
+        "value": "14100000"
+      },
+      {
+        "name": "ElectricViewID",
+        "value": "PS"
+      }
+    ],
+    [
+      {
+        "name": "FunctionViewID",
+        "value": "PS_SubS_UMC"
+      },
+      {
+        "name": "MechanicViewID",
+        "value": "14101000"
+      },
+      {
+        "name": "ElectricViewID",
+        "value": "PS_SubS_UMC"
+      }
+    ],
+    [
+      {
+        "name": "FunctionViewID",
+        "value": "PS_SubS_UMC_VAP_MM"
+      },
+      {
+        "name": "MechanicViewID",
+        "value": "14101100"
+      },
+      {
+        "name": "ElectricViewID",
+        "value": "PS_SubS_UMC_VAP_MM"
+      }
+    ],
+    [
+      {
+        "name": "FunctionViewID",
+        "value": "PS_SubS_UMC_VAP_MM_CD1_D1"
+      },
+      {
+        "name": "MechanicViewID",
+        "value": "14101111"
+      },
+      {
+        "name": "ElectricViewID",
+        "value": "PS_SubS_UMC_VAP_MM_CD1_D1"
+      }
+    ],
+    [
+      {
+        "name": "FunctionViewID",
+        "value": "PS_SubS_UMC_VAP_MM_CD1_GB1"
+      },
+      {
+        "name": "MechanicViewID",
+        "value": "14101112"
+      }
+    ],
+    [
+      {
+        "name": "FunctionViewID",
+        "value": "PS_SubS_UMC_VAP_MM_CD1_AS1"
+      },
+      {
+        "name": "MechanicViewID",
+        "value": "14101113"
+      }
+    ],
+    [
+      {
+        "name": "FunctionViewID",
+        "value": "PS_SubS_UMC_VAP_MM_CD1_AS2"
+      },
+      {
+        "name": "MechanicViewID",
+        "value": "14101114"
+      }
+    ],
+    [
+      {
+        "name": "FunctionViewID",
+        "value": "PS_SubS_UMC_VAP_MM_CD2_D1"
+      },
+      {
+        "name": "MechanicViewID",
+        "value": "14101121"
+      },
+      {
+        "name": "ElectricViewID",
+        "value": "PS_SubS_UMC_VAP_MM_CD2_D1"
+      }
+    ],
+    [
+      {
+        "name": "FunctionViewID",
+        "value": "PS_SubS_UMC_VAP_M M_CD2_GB1"
+      },
+      {
+        "name": "MechanicViewID",
+        "value": "14101122"
+      }
+    ],
+    [
+      {
+        "name": "FunctionViewID",
+        "value": "PS_SubS_UMC_VAP_MM_CD2_AS1"
+      },
+      {
+        "name": "MechanicViewID",
+        "value": "14101123"
+      }
+    ],
+    [
+      {
+        "name": "FunctionViewID",
+        "value": "PS_SubS_UMC_VAP_MM_CD2_AS2"
+      },
+      {
+        "name": "MechanicViewID",
+        "value": "14101124"
+      }
+    ],
+    [
+      {
+        "name": "FunctionViewID",
+        "value": "PS_SubS_UMC_VAP_MM_UMPARA_UMS1"
+      },
+      {
+        "name": "MechanicViewID",
+        "value": "14101131"
+      }
+    ]
+  ]
+}

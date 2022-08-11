@@ -1,0 +1,667 @@
+---
+projectDefinition:
+  projectName: "Demo-Project"
+  projectID: "1cd7ed82-9219-4489-8477-3ca91fff57b9"
+  attributes:
+  - attribute: "ConceptID"
+    dataType: "String"
+    value: null
+    unit: null
+    isIdentifier: true
+    relations:
+    - relation: "propagate"
+      reference: "this.PPRView@PPRViewID"
+      semantic: "SUMProject"
+viewDefinitions:
+- view: "Automation"
+  interfaceTypes: []
+- view: "Quality"
+  interfaceTypes: []
+- view: "Mechanical"
+  interfaceTypes: []
+- view: "Electrical"
+  interfaceTypes: []
+- view: "PPR"
+  interfaceTypes: []
+conceptMappings:
+- concept: "Transformer"
+  views:
+  - view: "Electrical"
+    derivedFrom: ""
+    attributes:
+    - attribute: "ElectricalViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    - attribute: "current_supply"
+      dataType: "Number"
+      value: "0.0"
+      unit: "Kw"
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "@current_supply"
+        semantic: "ElectricExport"
+      - relation: "dependency"
+        reference: "${HighPowerSupply}.electrical@power_supply"
+        semantic: "SUMProject"
+    interfaces: []
+  - view: "PPR"
+    derivedFrom: ""
+    attributes:
+    - attribute: "PPRViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    interfaces: []
+- concept: "RobotController"
+  views:
+  - view: "Automation"
+    derivedFrom: ""
+    attributes:
+    - attribute: "AutomationViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations:
+      - relation: "source"
+        reference: "@name"
+        semantic: "AutomationExport?name;id"
+    - attribute: "motion_acceleration"
+      dataType: "Number"
+      value: "0.0"
+      unit: "m/s"
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "@motion_acceleration"
+        semantic: "AutomationExport"
+    interfaces: []
+  - view: "PPR"
+    derivedFrom: ""
+    attributes:
+    - attribute: "PPRViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    interfaces: []
+- concept: "ScrewdriverController"
+  views:
+  - view: "Automation"
+    derivedFrom: ""
+    attributes:
+    - attribute: "AutomationViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations:
+      - relation: "source"
+        reference: "@name"
+        semantic: "AutomationExport?name;id"
+    - attribute: "screwdriver_curve"
+      dataType: "String"
+      value: ""
+      unit: ""
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "@screwdriver_curve"
+        semantic: "AutomationExport"
+    interfaces: []
+  - view: "Electrical"
+    derivedFrom: ""
+    attributes:
+    - attribute: "ElectricalViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations:
+      - relation: "source"
+        reference: "@name"
+        semantic: "ElectricExport?name;id"
+    - attribute: "power_consumption"
+      dataType: "Number"
+      value: "0.0"
+      unit: "Kw"
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "@power_consumption"
+        semantic: "ElectricExport"
+      - relation: "dependency"
+        reference: "${LowPowerSupply}.electrical@power_supply"
+        semantic: "SUMProject"
+    interfaces: []
+  - view: "PPR"
+    derivedFrom: ""
+    attributes:
+    - attribute: "PPRViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    interfaces: []
+- concept: "HighPowerSupply"
+  views:
+  - view: "Electrical"
+    derivedFrom: ""
+    attributes:
+    - attribute: "ElectricalViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations:
+      - relation: "source"
+        reference: "@name"
+        semantic: "ElectricExport?name;id"
+    - attribute: "power_supply"
+      dataType: "Number"
+      value: "0.0"
+      unit: "Kw"
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "@power_supply"
+        semantic: "ElectricExport"
+    interfaces: []
+  - view: "PPR"
+    derivedFrom: ""
+    attributes:
+    - attribute: "PPRViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    interfaces: []
+- concept: "Drive"
+  views:
+  - view: "Mechanical"
+    derivedFrom: ""
+    attributes:
+    - attribute: "MechanicalViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations:
+      - relation: "source"
+        reference: "@name"
+        semantic: "MechExport?name;id"
+    interfaces: []
+  - view: "PPR"
+    derivedFrom: ""
+    attributes:
+    - attribute: "PPRViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    interfaces: []
+- concept: "ElectricScrewdriver"
+  views:
+  - view: "Mechanical"
+    derivedFrom: ""
+    attributes:
+    - attribute: "MechanicalViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations:
+      - relation: "source"
+        reference: "@name"
+        semantic: "MechExport?name;id"
+    - attribute: "torque"
+      dataType: "Number"
+      value: "0.0"
+      unit: "Nm"
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "@torque"
+        semantic: "MechExport"
+      - relation: "dependency"
+        reference: "${ScrewdriverController}.automation@screw_curve"
+        semantic: "SUMProject"
+      - relation: "propagate"
+        reference: "${FastenScrewMeasure}.mechanical@torque"
+        semantic: "SUMProject"
+    interfaces: []
+  - view: "Electrical"
+    derivedFrom: ""
+    attributes:
+    - attribute: "ElectricalViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations:
+      - relation: "source"
+        reference: "@name"
+        semantic: "ElectricExport?name;id"
+    - attribute: "power_consumption"
+      dataType: "Number"
+      value: "0.0"
+      unit: "Kw"
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "@power_consumption"
+        semantic: "ElectricExport"
+      - relation: "dependency"
+        reference: "${Transformer}.electrical@current_supply"
+        semantic: "SUMProject"
+    interfaces: []
+  - view: "PPR"
+    derivedFrom: ""
+    attributes:
+    - attribute: "PPRViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    interfaces: []
+- concept: "Bit"
+  views:
+  - view: "Mechanical"
+    derivedFrom: ""
+    attributes:
+    - attribute: "MechanicalViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations:
+      - relation: "source"
+        reference: "@name"
+        semantic: "MechExport?name;id"
+    - attribute: "bit_type"
+      dataType: "String"
+      value: ""
+      unit: ""
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "@type"
+        semantic: "MechExport"
+    interfaces: []
+  - view: "PPR"
+    derivedFrom: ""
+    attributes:
+    - attribute: "PPRViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    interfaces: []
+- concept: "Robot"
+  views:
+  - view: "Mechanical"
+    derivedFrom: ""
+    attributes:
+    - attribute: "MechanicalViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations:
+      - relation: "source"
+        reference: "@name"
+        semantic: "MechExport?name;id"
+    - attribute: "position_accuracy"
+      dataType: "Number"
+      value: "0.0"
+      unit: "mm"
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "@position_accuracy"
+        semantic: "MechExport"
+      - relation: "dependency"
+        reference: "${RobotController}.automation@motion_acceleration"
+        semantic: "SUMProject"
+      - relation: "propagate"
+        reference: "${FastenScrewMeasure}.mechanical@position_accuracy"
+        semantic: "SUMProject"
+    interfaces: []
+  - view: "PPR"
+    derivedFrom: ""
+    attributes:
+    - attribute: "PPRViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    interfaces: []
+- concept: "FieldbusNetwork"
+  views:
+  - view: "Electrical"
+    derivedFrom: ""
+    attributes:
+    - attribute: "ElectricalViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations:
+      - relation: "source"
+        reference: "@name"
+        semantic: "ElectricExport?name;id"
+    - attribute: "fieldbus_type"
+      dataType: "String"
+      value: ""
+      unit: ""
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "@fieldbus_type"
+        semantic: "ElectricExport"
+    interfaces: []
+  - view: "PPR"
+    derivedFrom: ""
+    attributes:
+    - attribute: "PPRViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    interfaces: []
+- concept: "LowPowerSupply"
+  views:
+  - view: "Electrical"
+    derivedFrom: ""
+    attributes:
+    - attribute: "ElectricalViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations:
+      - relation: "source"
+        reference: "@name"
+        semantic: "ElectricExport?name;id"
+    - attribute: "power_supply"
+      dataType: "Number"
+      value: "0.0"
+      unit: "Kw"
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "@power_supply"
+        semantic: "ElectricExport"
+    interfaces: []
+  - view: "PPR"
+    derivedFrom: ""
+    attributes:
+    - attribute: "PPRViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    interfaces: []
+- concept: "Car_body_with_screwed_on_dashboard"
+  views:
+  - view: "PPR"
+    derivedFrom: ""
+    attributes:
+    - attribute: "PPRViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    interfaces: []
+- concept: "Car_body_with_dashboard"
+  views:
+  - view: "PPR"
+    derivedFrom: ""
+    attributes:
+    - attribute: "PPRViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    interfaces: []
+- concept: "FastenScrewMeasure"
+  views:
+  - view: "Quality"
+    derivedFrom: ""
+    attributes:
+    - attribute: "QualityViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations:
+      - relation: "source"
+        reference: "@name"
+        semantic: "QualityExport?name;id"
+    - attribute: "screw_tension"
+      dataType: "Number"
+      value: "0.0"
+      unit: "Nm"
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "this.mechanical@torque"
+        semantic: "SUMProject"
+    - attribute: "required_torque"
+      dataType: "Number"
+      value: "0.0"
+      unit: "Nm"
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "@required-torque"
+        semantic: "QualityExport"
+    interfaces: []
+  - view: "Mechanical"
+    derivedFrom: ""
+    attributes:
+    - attribute: "MechanicalViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations:
+      - relation: "source"
+        reference: "@name"
+        semantic: "MechExport?name;id"
+    - attribute: "torque"
+      dataType: "Number"
+      value: "0.0"
+      unit: "Nm"
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "${ElectricScrewdriver}.mechanical@torque"
+        semantic: "SUMProject"
+    interfaces: []
+  - view: "PPR"
+    derivedFrom: ""
+    attributes:
+    - attribute: "PPRViewID"
+      dataType: "String"
+      value: null
+      unit: null
+      isIdentifier: true
+      relations: []
+    interfaces: []
+initGraph:
+  elements:
+  - id: "Car_body_with_screwed_on_dashboard"
+    views: []
+  - id: "Car_body_with_dashboard"
+    views: []
+  - id: "FastenScrewMeasure"
+    views:
+    - name: "Mechanical"
+      attributes:
+      - name: "id"
+        value: ""
+      - name: "torque"
+        value: "0.0"
+    - name: "Quality"
+      attributes:
+      - name: "id"
+        value: ""
+      - name: "screw_tension"
+        value: "0.0"
+      - name: "required_torque"
+        value: "0.0"
+  - id: "Transformer"
+    views:
+    - name: "Electrical"
+      attributes:
+      - name: "current_supply"
+        value: "0.0"
+  - id: "RobotController"
+    views:
+    - name: "Automation"
+      attributes:
+      - name: "id"
+        value: ""
+      - name: "motion_acceleration"
+        value: "0.0"
+  - id: "ScrewdriverController"
+    views:
+    - name: "Automation"
+      attributes:
+      - name: "id"
+        value: ""
+      - name: "screwdriver_curve"
+        value: ""
+    - name: "Electrical"
+      attributes:
+      - name: "id"
+        value: ""
+      - name: "power_consumption"
+        value: "0.0"
+  - id: "HighPowerSupply"
+    views:
+    - name: "Electrical"
+      attributes:
+      - name: "id"
+        value: ""
+      - name: "power_supply"
+        value: "0.0"
+  - id: "Drive"
+    views:
+    - name: "Mechanical"
+      attributes:
+      - name: "id"
+        value: ""
+  - id: "ElectricScrewdriver"
+    views:
+    - name: "Electrical"
+      attributes:
+      - name: "id"
+        value: ""
+      - name: "power_consumption"
+        value: "0.0"
+    - name: "Mechanical"
+      attributes:
+      - name: "id"
+        value: ""
+      - name: "torque"
+        value: "0.0"
+  - id: "Bit"
+    views:
+    - name: "Mechanical"
+      attributes:
+      - name: "id"
+        value: ""
+      - name: "bit_type"
+        value: ""
+  - id: "Robot"
+    views:
+    - name: "Mechanical"
+      attributes:
+      - name: "id"
+        value: ""
+      - name: "position_accuracy"
+        value: "0.0"
+  - id: "FieldbusNetwork"
+    views:
+    - name: "Electrical"
+      attributes:
+      - name: "fieldbus_type"
+        value: ""
+      - name: "id"
+        value: ""
+  - id: "LowPowerSupply"
+    views:
+    - name: "Electrical"
+      attributes:
+      - name: "id"
+        value: ""
+      - name: "power_supply"
+        value: "0.0"
+  links:
+  - linkType: "Child"
+    leftElementId: "Transformer"
+    rightElementId: "ScrewdriverController"
+  - linkType: "Required"
+    leftElementId: "Transformer"
+    rightElementId: "HighPowerSupply"
+  - linkType: "Required"
+    leftElementId: "RobotController"
+    rightElementId: "LowPowerSupply"
+  - linkType: "Required"
+    leftElementId: "RobotController"
+    rightElementId: "FieldbusNetwork"
+  - linkType: "Required"
+    leftElementId: "ScrewdriverController"
+    rightElementId: "RobotController"
+  - linkType: "Required"
+    leftElementId: "ScrewdriverController"
+    rightElementId: "LowPowerSupply"
+  - linkType: "Required"
+    leftElementId: "ScrewdriverController"
+    rightElementId: "FieldbusNetwork"
+  - linkType: "Child"
+    leftElementId: "Drive"
+    rightElementId: "Transformer"
+  - linkType: "Child"
+    leftElementId: "ElectricScrewdriver"
+    rightElementId: "Bit"
+  - linkType: "Child"
+    leftElementId: "ElectricScrewdriver"
+    rightElementId: "Drive"
+  - linkType: "Child"
+    leftElementId: "ElectricScrewdriver"
+    rightElementId: "Robot"
+  - linkType: "Child"
+    leftElementId: "Robot"
+    rightElementId: "RobotController"
+  - linkType: "Required"
+    leftElementId: "Robot"
+    rightElementId: "HighPowerSupply"
+  - linkType: "ProductProcess"
+    leftElementId: "car_body_with_dashboard"
+    rightElementId: "FastenScrewMeasure"
+  - linkType: "ProductProcess"
+    leftElementId: "car_body_with_screwed_on_dashboard"
+    rightElementId: "FastenScrewMeasure"
+  - linkType: "ResourceProcess"
+    leftElementId: "ElectricScrewdriver"
+    rightElementId: "FastenScrewMeasure"

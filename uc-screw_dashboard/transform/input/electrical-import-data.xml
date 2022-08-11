@@ -1,0 +1,7 @@
+<device-list>
+    <device id="1" name="ElectricScrewdriver" power_consumption="10"/>
+    <device id="2" name="HighPowerSupply" power_supply="100"/>
+    <device id="3" name="LowPowerSupply" power_supply="50"/>
+    <device id="4" name="FieldbusNetwork" fieldbus_type="ModBus"/>
+    <device id="5" name="Robot"/>
+</device-list>

@@ -1,0 +1,4 @@
+<device-list>
+    <device id="1" name="ScrewdriverController" screwdriver_curve="DefaultScrewingCurve"/>
+    <device id="2" name="RobotController" motion_acceleration="50"/>
+</device-list>

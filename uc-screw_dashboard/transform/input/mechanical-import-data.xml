@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+    <Header>
+        <Info srcsystem="PTC Creo Parametric"/>
+        <Export fileext="stl" binary="true"/>
+        <Units position="mm" rotation="deg" volume="mm^3"/>
+        <Settings>
+            <SimplifyAsm mdl_bbox_val="0.000000"/>
+            <SimplifyPrt feat_vol_based="true" feat_vol_diff_fac="0.050000"/>
+            <Quality chord_height_fac="0.001500" angle_control="0.500000" step_size_fac="0.001500"/>
+        </Settings>
+    </Header>
+    <Assembly name="10100000" DescrDE="Zelle1" DescrEN="WorkCell1" position="0.0 0.0 0.0" rotation="0.0 0.0 0.0"
+              motionplaced="false">
+        <Assembly name="10110000" DescrEN="TransportResource" position="0.0000 0.0000 0.0000"
+                  rotation="0.00 0.00 0.00" motionplaced="false"/>
+        <Assembly name="10120000" DescrEN="PositioningCell" position="0.0000 0.0000 0.0000" rotation="0.00 0.00 0.00"
+                  motionplaced="false">
+            <Assembly name="10121000" DescrEN="Drive1" position="0.0000 0.0000 0.0000" rotation="0.00 0.00 0.00"
+                      motionplaced="false"/>
+            <Assembly name="10122000" DescrEN="Drive2" position="0.0000 0.0000 0.0000" rotation="0.00 0.00 0.00"
+                      motionplaced="false"/>
+        </Assembly>
+    </Assembly>
+
+    <Assembly name="10200000" DescrDE="Zelle2" DescrEN="WorkCell2" position="0.0000 -836.0000 0.0000"
+              rotation="0.00 180.00 0.00" motionplaced="false">
+        <Assembly name="10210000" DescrEN="ElectricScrewdriver" torque="5" position="0.0000 0.0000 0.0000"
+                  rotation="0.00 0.00 0.00" motionplaced="false">
+            <Assembly name="10212000" DescrEN="Drive3" position="0.0000 0.0000 0.0000" rotation="0.00 0.00 0.00"
+                      motionplaced="false"/>
+            <Assembly name="10211000" DescrEN="Bit" type="TORX" material="ChromeVanadium"
+                      position="0.0000 0.0000 0.0000" rotation="0.00 0.00 0.00" motionplaced="false"/>
+        </Assembly>
+        <Assembly name="10220000" DescrEN="Robot" position_accuracy="80" position="0.0000 0.0000 0.0000" rotation="0.00 0.00 0.00"
+                  motionplaced="false"/>
+    </Assembly>
+</Root>
