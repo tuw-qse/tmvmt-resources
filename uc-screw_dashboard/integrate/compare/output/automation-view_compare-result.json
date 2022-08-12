@@ -11,7 +11,7 @@
       "name" : "AutomationViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "b4fe6cd4-85a1-45c0-aa7f-c71652dfb7bb",
+        "id" : "f92def60-d76f-4c1e-870c-aa0d23e534d2",
         "name" : "AutomationView"
       }
     },
@@ -21,7 +21,7 @@
       "name" : "AutomationViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "b4fe6cd4-85a1-45c0-aa7f-c71652dfb7bb",
+        "id" : "f92def60-d76f-4c1e-870c-aa0d23e534d2",
         "name" : "AutomationView"
       }
     },
@@ -41,7 +41,7 @@
       "name" : "screwdriver_curve",
       "parentElement" : {
         "type" : "Element",
-        "id" : "b4fe6cd4-85a1-45c0-aa7f-c71652dfb7bb",
+        "id" : "f92def60-d76f-4c1e-870c-aa0d23e534d2",
         "name" : "AutomationView"
       }
     },
@@ -51,7 +51,7 @@
       "name" : "screwdriver_curve",
       "parentElement" : {
         "type" : "Element",
-        "id" : "b4fe6cd4-85a1-45c0-aa7f-c71652dfb7bb",
+        "id" : "f92def60-d76f-4c1e-870c-aa0d23e534d2",
         "name" : "AutomationView"
       }
     },
@@ -71,7 +71,7 @@
       "name" : "AutomationViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "e756ae90-5e01-480b-af8d-e044723d7cba",
+        "id" : "1f4698a4-9c7f-4634-af4a-5d94c0767ce8",
         "name" : "AutomationView"
       }
     },
@@ -81,7 +81,7 @@
       "name" : "AutomationViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "e756ae90-5e01-480b-af8d-e044723d7cba",
+        "id" : "1f4698a4-9c7f-4634-af4a-5d94c0767ce8",
         "name" : "AutomationView"
       }
     },
@@ -101,7 +101,7 @@
       "name" : "motion_acceleration",
       "parentElement" : {
         "type" : "Element",
-        "id" : "e756ae90-5e01-480b-af8d-e044723d7cba",
+        "id" : "1f4698a4-9c7f-4634-af4a-5d94c0767ce8",
         "name" : "AutomationView"
       }
     },
@@ -111,7 +111,7 @@
       "name" : "motion_acceleration",
       "parentElement" : {
         "type" : "Element",
-        "id" : "e756ae90-5e01-480b-af8d-e044723d7cba",
+        "id" : "1f4698a4-9c7f-4634-af4a-5d94c0767ce8",
         "name" : "AutomationView"
       }
     },

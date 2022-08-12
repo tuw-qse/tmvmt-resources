@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <CAEXFile FileName="Demo-Project_AutomationView_template.aml" SchemaVersion="2.15">
     <AdditionalInformation xmlns:ns2="at.ac.tuwien.ifs.qse.model.caex215.model.CAEXFile" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AutomationMLVersion="2.0"/>
-    <InstanceHierarchy ID="699640ee-a69b-4c96-b8b5-99fde1919fce" Name="InstanceHierarchy">
-        <InternalElement RefBaseSystemUnitPath="AML2AutomationViewSystemUnitClassLib/ScrewdriverController" ID="b78ae678-48d4-4155-9286-0cbddecd42d9" Name="ScrewdriverController">
+    <InstanceHierarchy ID="28c79ad6-3b6c-4ebb-b6f0-732a54f8d36c" Name="InstanceHierarchy">
+        <InternalElement RefBaseSystemUnitPath="AML2AutomationViewSystemUnitClassLib/ScrewdriverController" ID="444c5e29-29e0-458e-976c-0c3e2b729619" Name="ScrewdriverController">
             <Attribute AttributeDataType="String" Name="AutomationViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">ScrewdriverController</Value>
                 <RefSemantic CorrespondingAttributePath="source://AutomationExport?name;id#@name"/>
@@ -11,12 +11,12 @@
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">DefaultScrewingCurve</Value>
                 <RefSemantic CorrespondingAttributePath="source://AutomationExport#@screwdriver_curve"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="d4b0a63a-f57e-46df-a417-7114b0d8045f" Name="AutomationView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="719ecd3b-644c-4dfa-972c-5d3169446e2e" Name="AutomationView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="1eddac43-c189-4fc7-8722-d70044a98eb7" Name="AutomationView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="24ba42be-54c4-4daf-bc43-f9fd4fe0bd4f" Name="AutomationView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="AutomationViewRoleClassLib/ScrewdriverController"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/AutomationView"/>
         </InternalElement>
-        <InternalElement RefBaseSystemUnitPath="AML2AutomationViewSystemUnitClassLib/RobotController" ID="921ba3ac-a57b-412f-bd68-553e7203cf83" Name="RobotController">
+        <InternalElement RefBaseSystemUnitPath="AML2AutomationViewSystemUnitClassLib/RobotController" ID="61c44bff-b36e-408c-98ba-5416a366af82" Name="RobotController">
             <Attribute AttributeDataType="String" Name="AutomationViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">RobotController</Value>
                 <RefSemantic CorrespondingAttributePath="source://AutomationExport?name;id#@name"/>
@@ -25,8 +25,8 @@
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">50</Value>
                 <RefSemantic CorrespondingAttributePath="source://AutomationExport#@motion_acceleration"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="d4b0a63a-f57e-46df-a417-7114b0d8045f" Name="AutomationView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="719ecd3b-644c-4dfa-972c-5d3169446e2e" Name="AutomationView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="1eddac43-c189-4fc7-8722-d70044a98eb7" Name="AutomationView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="24ba42be-54c4-4daf-bc43-f9fd4fe0bd4f" Name="AutomationView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="AutomationViewRoleClassLib/RobotController"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/AutomationView"/>
         </InternalElement>
@@ -104,11 +104,11 @@
         </InterfaceClass>
     </InterfaceClassLib>
     <InterfaceClassLib Name="HierarchyViewInterfaceClassLib">
-        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="23db39c9-35f1-4f27-a8aa-0eb42d330b39" Name="AutomationView"/>
-        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="c6e9d832-c7d2-4cfb-b915-cf5702c1b08c" Name="QualityView"/>
-        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="a8b7cc60-9ab7-48f5-836d-7e77ce9399f8" Name="MechanicalView"/>
-        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="9160545b-8abc-49e6-b017-9903a64132a5" Name="ElectricalView"/>
-        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="041d39ce-6203-421f-80e3-4390d16aad13" Name="PPRView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="113df8c9-1074-4b6f-958d-8a3016bc6460" Name="AutomationView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="3a2a9695-fd5b-4e10-844e-ff1f105ba624" Name="QualityView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="cf6ecaf9-2747-4f39-b888-f1b7a47c4b33" Name="MechanicalView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="554cd920-fc69-4d98-9bc0-393a32953fb2" Name="ElectricalView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="cb0c1351-3446-45cb-a9ea-8f494259187f" Name="PPRView"/>
     </InterfaceClassLib>
     <InterfaceClassLib Name="AutomationViewInterfaceClassLib"/>
     <RoleClassLib Name="AutomationMLBaseRoleClassLib">
@@ -359,9 +359,9 @@
         </RoleClass>
     </RoleClassLib>
     <RoleClassLib Name="HierarchyViewRoleClassLib">
-        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/PropertySet" ID="0a50f20e-33a1-43c1-80aa-21fefbf38ea1" Name="AutomationView">
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="d4b0a63a-f57e-46df-a417-7114b0d8045f" Name="AutomationView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="719ecd3b-644c-4dfa-972c-5d3169446e2e" Name="AutomationView_toChild"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/PropertySet" ID="97820d72-60e3-4959-96e4-f76b4f9db577" Name="AutomationView">
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="1eddac43-c189-4fc7-8722-d70044a98eb7" Name="AutomationView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="24ba42be-54c4-4daf-bc43-f9fd4fe0bd4f" Name="AutomationView_toChild"/>
         </RoleClass>
     </RoleClassLib>
     <RoleClassLib Name="AutomationViewRoleClassLib">
@@ -386,8 +386,8 @@
             </Attribute>
         </RoleClass>
     </RoleClassLib>
-    <SystemUnitClassLib ID="af707ad5-b490-4f68-bfb7-04fe2cd196ee" Name="AML2AutomationViewSystemUnitClassLib">
-        <SystemUnitClass ID="721799cd-3911-4416-987a-15bf8b663c55" Name="RobotController">
+    <SystemUnitClassLib ID="4d2bea00-13c3-44c9-9fe0-88f1ad37a987" Name="AML2AutomationViewSystemUnitClassLib">
+        <SystemUnitClass ID="a634388e-1cf0-4336-a5d3-a29ffe0118cc" Name="RobotController">
             <Attribute AttributeDataType="String" Name="AutomationViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
                 <RefSemantic CorrespondingAttributePath="source://AutomationExport?name;id#@name"/>
@@ -396,12 +396,12 @@
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">0.0</Value>
                 <RefSemantic CorrespondingAttributePath="source://AutomationExport#@motion_acceleration"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="d4b0a63a-f57e-46df-a417-7114b0d8045f" Name="AutomationView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="719ecd3b-644c-4dfa-972c-5d3169446e2e" Name="AutomationView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="1eddac43-c189-4fc7-8722-d70044a98eb7" Name="AutomationView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="24ba42be-54c4-4daf-bc43-f9fd4fe0bd4f" Name="AutomationView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="AutomationViewRoleClassLib/RobotController"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/AutomationView"/>
         </SystemUnitClass>
-        <SystemUnitClass ID="7da47b0c-4093-4690-a844-292e2d0ace04" Name="ScrewdriverController">
+        <SystemUnitClass ID="bd2dc62e-c2db-4c8b-a778-ca7f6030ec01" Name="ScrewdriverController">
             <Attribute AttributeDataType="String" Name="AutomationViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
                 <RefSemantic CorrespondingAttributePath="source://AutomationExport?name;id#@name"/>
@@ -410,8 +410,8 @@
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"></Value>
                 <RefSemantic CorrespondingAttributePath="source://AutomationExport#@screwdriver_curve"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="d4b0a63a-f57e-46df-a417-7114b0d8045f" Name="AutomationView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="719ecd3b-644c-4dfa-972c-5d3169446e2e" Name="AutomationView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="1eddac43-c189-4fc7-8722-d70044a98eb7" Name="AutomationView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/AutomationView" ID="24ba42be-54c4-4daf-bc43-f9fd4fe0bd4f" Name="AutomationView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="AutomationViewRoleClassLib/ScrewdriverController"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/AutomationView"/>
         </SystemUnitClass>

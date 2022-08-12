@@ -11,7 +11,7 @@
       "name" : "MechanicalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "b1e753a6-9756-4edb-8a36-e39983af8850",
+        "id" : "e1d6dd5a-6024-4977-9591-bbd8bad87a33",
         "name" : "MechanicalView"
       }
     },
@@ -21,7 +21,7 @@
       "name" : "MechanicalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "b1e753a6-9756-4edb-8a36-e39983af8850",
+        "id" : "e1d6dd5a-6024-4977-9591-bbd8bad87a33",
         "name" : "MechanicalView"
       }
     },
@@ -41,7 +41,7 @@
       "name" : "torque",
       "parentElement" : {
         "type" : "Element",
-        "id" : "b1e753a6-9756-4edb-8a36-e39983af8850",
+        "id" : "e1d6dd5a-6024-4977-9591-bbd8bad87a33",
         "name" : "MechanicalView"
       }
     },
@@ -51,7 +51,7 @@
       "name" : "torque",
       "parentElement" : {
         "type" : "Element",
-        "id" : "b1e753a6-9756-4edb-8a36-e39983af8850",
+        "id" : "e1d6dd5a-6024-4977-9591-bbd8bad87a33",
         "name" : "MechanicalView"
       }
     },
@@ -67,20 +67,20 @@
     "accepted" : false,
     "leftParent" : {
       "type" : "Element",
-      "id" : "b1e753a6-9756-4edb-8a36-e39983af8850",
+      "id" : "e1d6dd5a-6024-4977-9591-bbd8bad87a33",
       "name" : "MechanicalView"
     },
     "rightParent" : {
       "type" : "Element",
-      "id" : "b1e753a6-9756-4edb-8a36-e39983af8850",
+      "id" : "e1d6dd5a-6024-4977-9591-bbd8bad87a33",
       "name" : "MechanicalView"
     },
     "value" : {
       "type" : "Link",
-      "id" : "c9e0172d-e3ca-486d-b24d-3f45bde82117",
+      "id" : "10a562f5-4a1d-449a-b50e-3caa2c442b4b",
       "name" : "ElectricScrewdriver.MechanicalView:MechanicalView_toChild-Bit.MechanicalView:MechanicalView_toMother",
-      "refPartnerSideA" : "b1e753a6-9756-4edb-8a36-e39983af8850:MechanicalView_toChild",
-      "refPartnerSideB" : "5cdb1769-2207-4924-b665-0a98fd67ab61:MechanicalView_toMother"
+      "refPartnerSideA" : "e1d6dd5a-6024-4977-9591-bbd8bad87a33:MechanicalView_toChild",
+      "refPartnerSideB" : "4538eebf-132b-4552-ad54-d92e9c775cd4:MechanicalView_toMother"
     }
   }, {
     "type" : "AttributeModify",
@@ -92,7 +92,7 @@
       "name" : "MechanicalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "5cdb1769-2207-4924-b665-0a98fd67ab61",
+        "id" : "4538eebf-132b-4552-ad54-d92e9c775cd4",
         "name" : "MechanicalView"
       }
     },
@@ -102,7 +102,7 @@
       "name" : "MechanicalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "5cdb1769-2207-4924-b665-0a98fd67ab61",
+        "id" : "4538eebf-132b-4552-ad54-d92e9c775cd4",
         "name" : "MechanicalView"
       }
     },
@@ -122,7 +122,7 @@
       "name" : "bit_type",
       "parentElement" : {
         "type" : "Element",
-        "id" : "5cdb1769-2207-4924-b665-0a98fd67ab61",
+        "id" : "4538eebf-132b-4552-ad54-d92e9c775cd4",
         "name" : "MechanicalView"
       }
     },
@@ -132,7 +132,7 @@
       "name" : "bit_type",
       "parentElement" : {
         "type" : "Element",
-        "id" : "5cdb1769-2207-4924-b665-0a98fd67ab61",
+        "id" : "4538eebf-132b-4552-ad54-d92e9c775cd4",
         "name" : "MechanicalView"
       }
     },
@@ -152,7 +152,7 @@
       "name" : "MechanicalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "98f5f099-0b26-46a3-ac8a-6f788e39b185",
+        "id" : "b1a03b32-7255-4575-a2d6-cd95b51be412",
         "name" : "MechanicalView"
       }
     },
@@ -162,7 +162,7 @@
       "name" : "MechanicalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "98f5f099-0b26-46a3-ac8a-6f788e39b185",
+        "id" : "b1a03b32-7255-4575-a2d6-cd95b51be412",
         "name" : "MechanicalView"
       }
     },
@@ -182,7 +182,7 @@
       "name" : "position_accuracy",
       "parentElement" : {
         "type" : "Element",
-        "id" : "98f5f099-0b26-46a3-ac8a-6f788e39b185",
+        "id" : "b1a03b32-7255-4575-a2d6-cd95b51be412",
         "name" : "MechanicalView"
       }
     },
@@ -192,7 +192,7 @@
       "name" : "position_accuracy",
       "parentElement" : {
         "type" : "Element",
-        "id" : "98f5f099-0b26-46a3-ac8a-6f788e39b185",
+        "id" : "b1a03b32-7255-4575-a2d6-cd95b51be412",
         "name" : "MechanicalView"
       }
     },

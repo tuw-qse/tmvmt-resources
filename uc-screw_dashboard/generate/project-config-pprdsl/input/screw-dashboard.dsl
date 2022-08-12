@@ -241,7 +241,7 @@ Process "FastenScrewMeasure": {
                                     }
                                   ]
   },
-  mechanical.pos_accuracy: { relations: [ 
+  mechanical.position_accuracy: { relations: [
                                           { 
                                             type: "source",
                                             semantic: "SUMProject",

@@ -486,6 +486,15 @@ conceptMappings:
       - relation: "source"
         reference: "@name"
         semantic: "MechExport?name;id"
+    - attribute: "position_accuracy"
+      dataType: "Number"
+      value: "0.0"
+      unit: "mm"
+      isIdentifier: false
+      relations:
+      - relation: "source"
+        reference: "${Robot}.mechanical@pos_accuracy"
+        semantic: "SUMProject"
     - attribute: "torque"
       dataType: "Number"
       value: "0.0"
@@ -518,6 +527,8 @@ initGraph:
       attributes:
       - name: "id"
         value: ""
+      - name: "position_accuracy"
+        value: "0.0"
       - name: "torque"
         value: "0.0"
     - name: "Quality"

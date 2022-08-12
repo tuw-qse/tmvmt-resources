@@ -11,7 +11,7 @@
       "name" : "ElectricalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "2ca4850d-1a5c-48c2-a11c-02bbbbdc6382",
+        "id" : "697795a8-9b7f-48c3-abcf-3d9269795855",
         "name" : "ElectricalView"
       }
     },
@@ -21,7 +21,7 @@
       "name" : "ElectricalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "2ca4850d-1a5c-48c2-a11c-02bbbbdc6382",
+        "id" : "697795a8-9b7f-48c3-abcf-3d9269795855",
         "name" : "ElectricalView"
       }
     },
@@ -41,7 +41,7 @@
       "name" : "power_consumption",
       "parentElement" : {
         "type" : "Element",
-        "id" : "2ca4850d-1a5c-48c2-a11c-02bbbbdc6382",
+        "id" : "697795a8-9b7f-48c3-abcf-3d9269795855",
         "name" : "ElectricalView"
       }
     },
@@ -51,7 +51,7 @@
       "name" : "power_consumption",
       "parentElement" : {
         "type" : "Element",
-        "id" : "2ca4850d-1a5c-48c2-a11c-02bbbbdc6382",
+        "id" : "697795a8-9b7f-48c3-abcf-3d9269795855",
         "name" : "ElectricalView"
       }
     },
@@ -71,7 +71,7 @@
       "name" : "ElectricalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "e577e46d-6bf4-4cd7-b4a0-6dfea93478e4",
+        "id" : "36f68e53-a093-4039-810d-5fb96f27de72",
         "name" : "ElectricalView"
       }
     },
@@ -81,7 +81,7 @@
       "name" : "ElectricalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "e577e46d-6bf4-4cd7-b4a0-6dfea93478e4",
+        "id" : "36f68e53-a093-4039-810d-5fb96f27de72",
         "name" : "ElectricalView"
       }
     },
@@ -101,7 +101,7 @@
       "name" : "power_supply",
       "parentElement" : {
         "type" : "Element",
-        "id" : "e577e46d-6bf4-4cd7-b4a0-6dfea93478e4",
+        "id" : "36f68e53-a093-4039-810d-5fb96f27de72",
         "name" : "ElectricalView"
       }
     },
@@ -111,7 +111,7 @@
       "name" : "power_supply",
       "parentElement" : {
         "type" : "Element",
-        "id" : "e577e46d-6bf4-4cd7-b4a0-6dfea93478e4",
+        "id" : "36f68e53-a093-4039-810d-5fb96f27de72",
         "name" : "ElectricalView"
       }
     },
@@ -131,7 +131,7 @@
       "name" : "ElectricalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "d5444d36-1b61-44d4-a29c-bf5027ce5f11",
+        "id" : "b183d112-76e8-4d36-b873-0337b3d33fb1",
         "name" : "ElectricalView"
       }
     },
@@ -141,7 +141,7 @@
       "name" : "ElectricalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "d5444d36-1b61-44d4-a29c-bf5027ce5f11",
+        "id" : "b183d112-76e8-4d36-b873-0337b3d33fb1",
         "name" : "ElectricalView"
       }
     },
@@ -161,7 +161,7 @@
       "name" : "power_supply",
       "parentElement" : {
         "type" : "Element",
-        "id" : "d5444d36-1b61-44d4-a29c-bf5027ce5f11",
+        "id" : "b183d112-76e8-4d36-b873-0337b3d33fb1",
         "name" : "ElectricalView"
       }
     },
@@ -171,7 +171,7 @@
       "name" : "power_supply",
       "parentElement" : {
         "type" : "Element",
-        "id" : "d5444d36-1b61-44d4-a29c-bf5027ce5f11",
+        "id" : "b183d112-76e8-4d36-b873-0337b3d33fb1",
         "name" : "ElectricalView"
       }
     },
@@ -191,7 +191,7 @@
       "name" : "ElectricalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "d3eeb4d0-6638-4c19-a56e-01c6b0798ba8",
+        "id" : "99f9c052-86bf-43f6-a513-c9d2cf8e0f0f",
         "name" : "ElectricalView"
       }
     },
@@ -201,7 +201,7 @@
       "name" : "ElectricalViewID",
       "parentElement" : {
         "type" : "Element",
-        "id" : "d3eeb4d0-6638-4c19-a56e-01c6b0798ba8",
+        "id" : "99f9c052-86bf-43f6-a513-c9d2cf8e0f0f",
         "name" : "ElectricalView"
       }
     },
@@ -221,7 +221,7 @@
       "name" : "fieldbus_type",
       "parentElement" : {
         "type" : "Element",
-        "id" : "d3eeb4d0-6638-4c19-a56e-01c6b0798ba8",
+        "id" : "99f9c052-86bf-43f6-a513-c9d2cf8e0f0f",
         "name" : "ElectricalView"
       }
     },
@@ -231,7 +231,7 @@
       "name" : "fieldbus_type",
       "parentElement" : {
         "type" : "Element",
-        "id" : "d3eeb4d0-6638-4c19-a56e-01c6b0798ba8",
+        "id" : "99f9c052-86bf-43f6-a513-c9d2cf8e0f0f",
         "name" : "ElectricalView"
       }
     },

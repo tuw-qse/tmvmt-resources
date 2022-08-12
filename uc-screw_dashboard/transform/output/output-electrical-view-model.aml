@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <CAEXFile FileName="Demo-Project_ElectricalView_template.aml" SchemaVersion="2.15">
     <AdditionalInformation xmlns:ns2="at.ac.tuwien.ifs.qse.model.caex215.model.CAEXFile" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AutomationMLVersion="2.0"/>
-    <InstanceHierarchy ID="08d6b971-bc86-42f5-8665-14f19583e594" Name="InstanceHierarchy">
-        <InternalElement RefBaseSystemUnitPath="AML2ElectricalViewSystemUnitClassLib/ElectricScrewdriver" ID="fca25384-f580-4600-96ba-4135272c611d" Name="ElectricScrewdriver">
+    <InstanceHierarchy ID="6aa422e2-c451-477a-a5e5-7f48d604b725" Name="InstanceHierarchy">
+        <InternalElement RefBaseSystemUnitPath="AML2ElectricalViewSystemUnitClassLib/ElectricScrewdriver" ID="465f2919-da73-46d7-9c53-aca1c2ff60e5" Name="ElectricScrewdriver">
             <Attribute AttributeDataType="String" Name="ElectricalViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">ElectricScrewdriver</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport?name;id#@name"/>
@@ -12,12 +12,12 @@
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport#@power_consumption"/>
                 <RefSemantic CorrespondingAttributePath="dependency://SUMProject#${Transformer}.electrical@current_supply"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="b813db1b-c7bb-4c7e-9dc8-6eb419a92220" Name="ElectricalView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="8f4ca76c-b06e-4e22-96d8-b15959b8c1c0" Name="ElectricalView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="772c8653-d662-4923-b3df-2682f65b3994" Name="ElectricalView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="52fd664b-2a11-4b11-b6d0-9385283afd99" Name="ElectricalView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="ElectricalViewRoleClassLib/ElectricScrewdriver"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/ElectricalView"/>
         </InternalElement>
-        <InternalElement RefBaseSystemUnitPath="AML2ElectricalViewSystemUnitClassLib/HighPowerSupply" ID="9d8a915b-9027-4631-ab81-3ea36ee9d43e" Name="HighPowerSupply">
+        <InternalElement RefBaseSystemUnitPath="AML2ElectricalViewSystemUnitClassLib/HighPowerSupply" ID="ba2b16fb-af47-4732-bba1-e2d01311b979" Name="HighPowerSupply">
             <Attribute AttributeDataType="String" Name="ElectricalViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">HighPowerSupply</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport?name;id#@name"/>
@@ -26,12 +26,12 @@
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">100</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport#@power_supply"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="b813db1b-c7bb-4c7e-9dc8-6eb419a92220" Name="ElectricalView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="8f4ca76c-b06e-4e22-96d8-b15959b8c1c0" Name="ElectricalView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="772c8653-d662-4923-b3df-2682f65b3994" Name="ElectricalView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="52fd664b-2a11-4b11-b6d0-9385283afd99" Name="ElectricalView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="ElectricalViewRoleClassLib/HighPowerSupply"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/ElectricalView"/>
         </InternalElement>
-        <InternalElement RefBaseSystemUnitPath="AML2ElectricalViewSystemUnitClassLib/LowPowerSupply" ID="e8450d47-ae1f-488d-87db-b48681fe3c85" Name="LowPowerSupply">
+        <InternalElement RefBaseSystemUnitPath="AML2ElectricalViewSystemUnitClassLib/LowPowerSupply" ID="ae51849f-f3bd-4668-a6be-73859e5de193" Name="LowPowerSupply">
             <Attribute AttributeDataType="String" Name="ElectricalViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">LowPowerSupply</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport?name;id#@name"/>
@@ -40,12 +40,12 @@
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">50</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport#@power_supply"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="b813db1b-c7bb-4c7e-9dc8-6eb419a92220" Name="ElectricalView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="8f4ca76c-b06e-4e22-96d8-b15959b8c1c0" Name="ElectricalView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="772c8653-d662-4923-b3df-2682f65b3994" Name="ElectricalView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="52fd664b-2a11-4b11-b6d0-9385283afd99" Name="ElectricalView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="ElectricalViewRoleClassLib/LowPowerSupply"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/ElectricalView"/>
         </InternalElement>
-        <InternalElement RefBaseSystemUnitPath="AML2ElectricalViewSystemUnitClassLib/FieldbusNetwork" ID="95e14149-1a4f-49cc-ad2e-cf68238664d1" Name="FieldbusNetwork">
+        <InternalElement RefBaseSystemUnitPath="AML2ElectricalViewSystemUnitClassLib/FieldbusNetwork" ID="fbb1e153-7266-4d4e-ae3d-923cd0756a1b" Name="FieldbusNetwork">
             <Attribute AttributeDataType="String" Name="ElectricalViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">FieldbusNetwork</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport?name;id#@name"/>
@@ -54,8 +54,8 @@
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">ModBus</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport#@fieldbus_type"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="b813db1b-c7bb-4c7e-9dc8-6eb419a92220" Name="ElectricalView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="8f4ca76c-b06e-4e22-96d8-b15959b8c1c0" Name="ElectricalView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="772c8653-d662-4923-b3df-2682f65b3994" Name="ElectricalView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="52fd664b-2a11-4b11-b6d0-9385283afd99" Name="ElectricalView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="ElectricalViewRoleClassLib/FieldbusNetwork"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/ElectricalView"/>
         </InternalElement>
@@ -133,11 +133,11 @@
         </InterfaceClass>
     </InterfaceClassLib>
     <InterfaceClassLib Name="HierarchyViewInterfaceClassLib">
-        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="23db39c9-35f1-4f27-a8aa-0eb42d330b39" Name="AutomationView"/>
-        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="c6e9d832-c7d2-4cfb-b915-cf5702c1b08c" Name="QualityView"/>
-        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="a8b7cc60-9ab7-48f5-836d-7e77ce9399f8" Name="MechanicalView"/>
-        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="9160545b-8abc-49e6-b017-9903a64132a5" Name="ElectricalView"/>
-        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="041d39ce-6203-421f-80e3-4390d16aad13" Name="PPRView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="113df8c9-1074-4b6f-958d-8a3016bc6460" Name="AutomationView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="3a2a9695-fd5b-4e10-844e-ff1f105ba624" Name="QualityView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="cf6ecaf9-2747-4f39-b888-f1b7a47c4b33" Name="MechanicalView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="554cd920-fc69-4d98-9bc0-393a32953fb2" Name="ElectricalView"/>
+        <InterfaceClass RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Order" ID="cb0c1351-3446-45cb-a9ea-8f494259187f" Name="PPRView"/>
     </InterfaceClassLib>
     <InterfaceClassLib Name="ElectricalViewInterfaceClassLib"/>
     <RoleClassLib Name="AutomationMLBaseRoleClassLib">
@@ -388,9 +388,9 @@
         </RoleClass>
     </RoleClassLib>
     <RoleClassLib Name="HierarchyViewRoleClassLib">
-        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/PropertySet" ID="85107ce9-a2dc-468a-b1fa-aefec8cf9eb8" Name="ElectricalView">
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="b813db1b-c7bb-4c7e-9dc8-6eb419a92220" Name="ElectricalView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="8f4ca76c-b06e-4e22-96d8-b15959b8c1c0" Name="ElectricalView_toChild"/>
+        <RoleClass RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/PropertySet" ID="20728115-0d0f-444b-a216-fa643358bdcf" Name="ElectricalView">
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="772c8653-d662-4923-b3df-2682f65b3994" Name="ElectricalView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="52fd664b-2a11-4b11-b6d0-9385283afd99" Name="ElectricalView_toChild"/>
         </RoleClass>
     </RoleClassLib>
     <RoleClassLib Name="ElectricalViewRoleClassLib">
@@ -457,8 +457,8 @@
             </Attribute>
         </RoleClass>
     </RoleClassLib>
-    <SystemUnitClassLib ID="0cd32ac5-0c35-4d37-8ed2-e5a5c67c4d56" Name="AML2ElectricalViewSystemUnitClassLib">
-        <SystemUnitClass ID="bab75f3a-3091-42b6-bca3-30e88e14529c" Name="Transformer">
+    <SystemUnitClassLib ID="7ee9e8d3-861a-405b-b25d-5405e52def92" Name="AML2ElectricalViewSystemUnitClassLib">
+        <SystemUnitClass ID="f5262b9b-41d7-4b73-91a7-827ae66aae75" Name="Transformer">
             <Attribute AttributeDataType="String" Name="ElectricalViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
             </Attribute>
@@ -467,12 +467,12 @@
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport#@current_supply"/>
                 <RefSemantic CorrespondingAttributePath="dependency://SUMProject#${HighPowerSupply}.electrical@power_supply"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="b813db1b-c7bb-4c7e-9dc8-6eb419a92220" Name="ElectricalView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="8f4ca76c-b06e-4e22-96d8-b15959b8c1c0" Name="ElectricalView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="772c8653-d662-4923-b3df-2682f65b3994" Name="ElectricalView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="52fd664b-2a11-4b11-b6d0-9385283afd99" Name="ElectricalView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="ElectricalViewRoleClassLib/Transformer"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/ElectricalView"/>
         </SystemUnitClass>
-        <SystemUnitClass ID="4a4b9cc5-dfac-42f5-bb02-b5c58036fead" Name="ScrewdriverController">
+        <SystemUnitClass ID="8485b88f-abf4-4527-8d91-58789879eb56" Name="ScrewdriverController">
             <Attribute AttributeDataType="String" Name="ElectricalViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport?name;id#@name"/>
@@ -482,12 +482,12 @@
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport#@power_consumption"/>
                 <RefSemantic CorrespondingAttributePath="dependency://SUMProject#${LowPowerSupply}.electrical@power_supply"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="b813db1b-c7bb-4c7e-9dc8-6eb419a92220" Name="ElectricalView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="8f4ca76c-b06e-4e22-96d8-b15959b8c1c0" Name="ElectricalView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="772c8653-d662-4923-b3df-2682f65b3994" Name="ElectricalView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="52fd664b-2a11-4b11-b6d0-9385283afd99" Name="ElectricalView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="ElectricalViewRoleClassLib/ScrewdriverController"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/ElectricalView"/>
         </SystemUnitClass>
-        <SystemUnitClass ID="2cea07d6-e1b1-495a-9e1a-51b3e4b4b344" Name="HighPowerSupply">
+        <SystemUnitClass ID="e7c5bf6c-530b-4fe7-b0c2-23f8ba218fb6" Name="HighPowerSupply">
             <Attribute AttributeDataType="String" Name="ElectricalViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport?name;id#@name"/>
@@ -496,12 +496,12 @@
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">0.0</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport#@power_supply"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="b813db1b-c7bb-4c7e-9dc8-6eb419a92220" Name="ElectricalView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="8f4ca76c-b06e-4e22-96d8-b15959b8c1c0" Name="ElectricalView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="772c8653-d662-4923-b3df-2682f65b3994" Name="ElectricalView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="52fd664b-2a11-4b11-b6d0-9385283afd99" Name="ElectricalView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="ElectricalViewRoleClassLib/HighPowerSupply"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/ElectricalView"/>
         </SystemUnitClass>
-        <SystemUnitClass ID="909ac704-c4f6-433a-9db6-82fedfa6ee81" Name="ElectricScrewdriver">
+        <SystemUnitClass ID="6289d295-e3f7-4be2-9b5f-d8f4b366b950" Name="ElectricScrewdriver">
             <Attribute AttributeDataType="String" Name="ElectricalViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport?name;id#@name"/>
@@ -511,12 +511,12 @@
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport#@power_consumption"/>
                 <RefSemantic CorrespondingAttributePath="dependency://SUMProject#${Transformer}.electrical@current_supply"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="b813db1b-c7bb-4c7e-9dc8-6eb419a92220" Name="ElectricalView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="8f4ca76c-b06e-4e22-96d8-b15959b8c1c0" Name="ElectricalView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="772c8653-d662-4923-b3df-2682f65b3994" Name="ElectricalView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="52fd664b-2a11-4b11-b6d0-9385283afd99" Name="ElectricalView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="ElectricalViewRoleClassLib/ElectricScrewdriver"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/ElectricalView"/>
         </SystemUnitClass>
-        <SystemUnitClass ID="1549d07b-1e3b-4a67-8ef5-54a0393556fe" Name="FieldbusNetwork">
+        <SystemUnitClass ID="d3a87b15-54e1-4b5c-9aab-b456328926fa" Name="FieldbusNetwork">
             <Attribute AttributeDataType="String" Name="ElectricalViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport?name;id#@name"/>
@@ -525,12 +525,12 @@
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"></Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport#@fieldbus_type"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="b813db1b-c7bb-4c7e-9dc8-6eb419a92220" Name="ElectricalView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="8f4ca76c-b06e-4e22-96d8-b15959b8c1c0" Name="ElectricalView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="772c8653-d662-4923-b3df-2682f65b3994" Name="ElectricalView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="52fd664b-2a11-4b11-b6d0-9385283afd99" Name="ElectricalView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="ElectricalViewRoleClassLib/FieldbusNetwork"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/ElectricalView"/>
         </SystemUnitClass>
-        <SystemUnitClass ID="bab308ed-4cc4-4d8e-9907-7e1cd12a4a74" Name="LowPowerSupply">
+        <SystemUnitClass ID="14298db3-fbd8-47da-8d43-e11320b7b523" Name="LowPowerSupply">
             <Attribute AttributeDataType="String" Name="ElectricalViewID">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">null</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport?name;id#@name"/>
@@ -539,8 +539,8 @@
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">0.0</Value>
                 <RefSemantic CorrespondingAttributePath="source://ElectricExport#@power_supply"/>
             </Attribute>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="b813db1b-c7bb-4c7e-9dc8-6eb419a92220" Name="ElectricalView_toMother"/>
-            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="8f4ca76c-b06e-4e22-96d8-b15959b8c1c0" Name="ElectricalView_toChild"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="772c8653-d662-4923-b3df-2682f65b3994" Name="ElectricalView_toMother"/>
+            <ExternalInterface RefBaseClassPath="HierarchyViewInterfaceClassLib/ElectricalView" ID="52fd664b-2a11-4b11-b6d0-9385283afd99" Name="ElectricalView_toChild"/>
             <SupportedRoleClass RefRoleClassPath="ElectricalViewRoleClassLib/LowPowerSupply"/>
             <SupportedRoleClass RefRoleClassPath="HierarchyViewRoleClassLib/ElectricalView"/>
         </SystemUnitClass>
